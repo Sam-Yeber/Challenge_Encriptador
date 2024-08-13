@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="cabecera">
+        <img src="/assests/Logo.png" class="cabecera__imagen" alt="Logo">
+        <h1 class="cabecera__titulo">ENCRIPTADOR DE TEXTO</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="contenedor__encriptar">
+            <textarea name="texto-encriptar" class="contenedor__texto__encriptar" placeholder="Ingrese el Texto Aquí"></textarea>
+            <span class="contenedor__encriptar__mensaje">
+                <img src="/assests/signo-de-exclamacion.png" alt="signo de exclamación" class="contenedor__encriptar__signo">Solo Letras Minúsculas y sin Acentos
+            </span>
+            <div class="contenedor__encriptar__botones">
+                <button class="boton-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                <img src="/assests/contenedor-de-basura.png" alt="Limpiar texto" class="contenedor__encriptar__limpiar" onclick="limpiarTexto()"> 
+            </div>
+        </section>
+
+        <section class="contenedor__desencriptar">
+            <textarea name="texto-desencriptar" class="contenedor__texto__desencriptar"></textarea>
+            <div class="contenedor__desencriptar__letras">
+                <img src="/assests/Muñeco.png" alt="muñeco" class="contenedor__desencriptar__imagen">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p class="contenedor__desencriptar__mensaje">Ingresa el texto que desees encriptar o desencriptar en el cuadro de la izquierda</p>
+            </div>
+            <div class="contenedor__desencriptar__botones">
+                <button class="boton-copiar" onclick="copiarTexto()">Copiar</button>   
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p><strong>Desarrollado por Yeber Guerrero</strong></p>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>
